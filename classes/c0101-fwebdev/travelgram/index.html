@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <base href="/mba-fullstack/classes/c0101-fwebdev/travelgram/">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travelgram</title>
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+    <div class="bg-surface-color">
+        <div class="container">
+            <nav>
+                <a href="" id="logo">
+                    <img src="./assets/Logo.svg" alt="logomarca">
+                </a>
+                <ul id="primary-menu">
+                    <li>
+                        <a href="#">
+                            <img src="./assets/icons/MagnifyingGlass.png" alt="ícone de lupa">
+                        </a>
+                    </li>
+                    <li><a href="">Explorar</a></li>
+                    <li><a href="">Minhas viagens</a></li>
+                    <li>
+                        <a href=""><img src="https://avatars.githubusercontent.com/u/140275759?v=4" alt="foto de perfil"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <header>
+            <div class="container">
+                <div id="profile">
+                    <img src="https://avatars.githubusercontent.com/u/140275759?v=4" alt="profile picture">
+                    <div>
+                        <h1>Rafael Becker</h1>
+                        <p>Amante de viagens, cultura e gastronomia. 🌍✈️ <br/>
+                            Aqui compartilho as histórias registradas em cada clique, explorando cantinhos fascinantes do
+                            nosso
+                            planeta a partir da movimentada cidade de São Paulo. 🏙️📸</p>
+                    </div>
+                </div>
+    
+                <ul id="info">
+                    <li>
+                        <img src="./assets/icons/MapPin.svg" alt="mapping"/>
+                        <span>Lontras</span>
+                    </li>
+                    <li>
+                        <img src="./assets/icons/AirplaneTilt.png" alt="airplane"/>
+                        <span>5 estados</span>
+                    </li>
+                    <li>
+                        <img src="./assets/icons/Image.png" alt="picture"/>
+                        <span>240 fotos</span>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <main class="container">
+        <img src="./assets/images/Image01.png" alt="...">
+        <img src="./assets/images/Image02.png" alt="...">
+        <img src="./assets/images/Image03.png" alt="...">
+        <img src="./assets/images/Image04.png" alt="...">
+        <img src="./assets/images/Image05.png" alt="...">
+        <img src="./assets/images/Image06.png" alt="...">
+        <img src="./assets/images/Image07.png" alt="...">
+        <img src="./assets/images/Image08.png" alt="...">
+        <img src="./assets/images/Image09.png" alt="...">
+        <img src="./assets/images/Image10.png" alt="...">
+        <img src="./assets/images/Image11.png" alt="...">
+        <img src="./assets/images/Image12.png" alt="...">
+    </main>
+    
+    <footer class="container">
+        <span>
+            Travelgram &copy;<span id="year"></span>
+        </span>
+        <span>Termos de uso</span>
+        <span>Política de privacidade</span>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('year').innerText = new Date().getFullYear() + ""
+        })
+    </script>
+</body>
+</html>
