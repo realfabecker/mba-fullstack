@@ -1,0 +1,46 @@
+header {
+    margin-top: 64px;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+
+    & > img {
+        width: 116px;
+        height: 56px;
+    }
+    
+    & div {
+        position: relative;
+        
+        input {
+            width: 400px;
+            height: 56px;
+            border-radius: 12px;
+            padding: 17px 16px;
+            background-color: var(--base-gray-200);
+            border: 1px solid var(--base-gray-400);
+            font: var(--text-md);
+            color: var(--base-gray-500);
+            &:focus {
+                outline: 2px solid var(--main-pink);
+            }
+        }
+        
+        button {
+            position: absolute;
+            border: none;
+            cursor: pointer;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            right: .5rem;
+            background: url(../assets/icons/button-default.svg) center/contain;
+            transform: translateY(-50%);
+        }
+
+        input:valid + button {
+            background: url(../assets/icons/button-active.svg) center/contain;
+        }
+    }
+}

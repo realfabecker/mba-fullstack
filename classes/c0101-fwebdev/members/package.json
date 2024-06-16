@@ -1,0 +1,17 @@
+{
+  "name": "members",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev:app": "serve",
+    "dev:api": "json-server db.json"
+  },
+  "author": "Rafael Becker <realfabecker@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.1",
+    "serve": "^14.2.3"
+  }
+}

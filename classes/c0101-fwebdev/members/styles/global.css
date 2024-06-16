@@ -1,0 +1,57 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-pink: #D658B3;
+    --main-green: #45B442;
+    
+    --base-gray-700: #332B31;
+    --base-gray-600: #4A4448;
+    --base-gray-500: #756C71;
+    --base-gray-400: #D3CFD2;
+    --base-gray-300: #DFDCDF;
+    --base-gray-200: #E9E7E9;
+    --base-gray-100: #F4F1F2;
+    --base-white: #FFFFFF;
+    
+    --gradiant-base: linear-gradient(90deg,#2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%);
+    
+    --ff-base: 'Oxygen', sans-serif;
+    
+    --title-md: 700 1.5rem/1.4 var(--ff-base);
+    --title-sm: 700 1.125rem/1.4 var(--ff-base);
+    --subtitle-md: 700 0.875rem/1.4 var(--ff-base);
+    --subtitle-sm: 700 0.75rem/1.4 var(--ff-base);
+    --text-md: 400 1rem/1.4 var(--ff-base);
+    --text-sm: 400 0.875rem/1.4 var(--ff-base);
+    --text-xs: 400 0.75rem/1.4 var(--ff-base);
+}
+
+body {
+    background-color: var(--base-gray-200);
+}
+
+.container {
+    max-width: 912px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px #F2F2F2;
+    border-radius: 0px;
+    margin-block: 25px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb{
+    background: #8B8B8B;
+    border-radius: 27px;
+    border: 4px solid rgba(0, 0, 0, 0);
+}

@@ -1,0 +1,230 @@
+main {
+    margin-top: 64px;
+    display: grid;
+    grid-template-areas: 
+            "A B C"
+            "D E F"
+            "G H I";
+    gap: 16px;
+    margin-bottom: 162px;
+}
+
+section#user {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background-color: var(--base-white);
+    padding: 16px;
+    /*width: 320px;*/
+    border-radius: 16px;
+    
+    & img {
+        width: 56px;
+        height: 56px;
+        object-fit: contain;
+        border: 1px solid var(--gradiant-base);
+    }
+    
+    & > div > h2 {
+        font: var(--title-sm);
+    }
+    
+    & > div > span {
+        margin-top: 4px;
+        font: var(--text-xs);
+        color: var(--base-gray-500);
+    }
+}
+
+section#haircut-history {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    
+    padding-top: 28px;
+    padding-inline: 24px;
+    
+    /*max-width: 320px;*/
+    max-height: 360px;
+    border-radius: 16px;
+    background-color: var(--base-white);
+
+    width: 100%;
+    padding-right: 15px;
+    overflow-y: scroll;
+        
+    & > div:first-child { 
+        display: flex;
+        justify-content: space-between;
+        color: var(--base-gray-500);
+        
+        & > span:first-child {
+            font: var(--subtitle-sm);
+        }
+        
+        & > span:nth-child(2) {
+            font: var(--text-xs);
+        }
+    }
+    
+    & ul {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 16px;
+        
+        border-top: 1px solid var(--base-gray-200);
+        
+        & li:first-child {
+            margin-top: 12px;
+        }
+        
+        & li {
+            display: flex;
+            font: var(--text-xs);
+            justify-content: space-between;
+        }
+        
+        & li > div.haircut-info {
+            height: 40px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            
+            & > strong {
+                color: var(--base-gray-600);
+            }
+            
+            & > span {
+                color: var(--base-gray-500);
+            }
+        }
+    }
+}
+
+section#card {
+    padding: 36px 32px 32px 32px;
+    border-radius: 20px;
+    background-color: var(--base-white);
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+    & > div:first-child {
+        display: flex;
+        justify-content: space-between;
+        
+        & > span {
+            background-color: var(--base-gray-300);
+            border-radius: 999px;
+            height: 32px;
+            font: var(--subtitle-md);
+            color: var(--base-gray-500);
+            padding: 6px 12px 6px 12px;
+        }
+        
+        & > div:first-child {
+            flex-direction: column;
+            display: flex;
+            
+            & span:first-child {
+                text-transform: uppercase;
+                font: var(--subtitle-sm);
+                color: var(--base-gray-500);
+            }
+            
+            & span:nth-child(2) {
+                margin-top: 4px;
+                font: var(--text-xs);
+                color: var(--base-gray-500);
+            }
+        }
+    }
+    
+    & div.slot-list {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        
+        margin-top: 32px;
+        gap: 16px;
+        
+        & div.slot-item {
+            width: 100%;
+            border-radius: 20px;
+            padding: 12px;
+            
+            background-color: var(--base-gray-200);
+            
+            & > img {
+                width: 100%;
+                /*width: 64px;*/
+                /*height: 64px;*/
+            }
+        }
+    }
+}
+
+section#progress {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: var(--base-white);
+    border-radius: 16px;
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 32px 22px 32px;
+    
+    & div:first-child {
+        width: 100%;
+        
+        & > span  {
+            font: var(--text-md);
+            color: var(--base-gray-500);
+            strong {
+                font: var(--title-md);
+                color: var(--base-gray-600);
+            }
+        }
+    }
+    & > div:nth-child(2) {
+        background-color: var(--base-gray-200);
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+        & > img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+div.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    & > span.progress-number {
+        font: var(--text-xs);
+        color: var(--base-gray-500);
+        white-space: nowrap;
+    }
+    
+    & > div#progress-bar {
+        background-color: var(--base-gray-200);
+        border-radius: 16px;
+        width: 100%;
+        height: 8px;
+    
+        & > div#progress-fill {
+            height: 8px;
+            width: 70%;
+            border-radius: 16px;
+            background-image: var(--gradiant-base);
+        }
+    }
+    
+}
+
