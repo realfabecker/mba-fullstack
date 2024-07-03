@@ -1,0 +1,24 @@
+.wrapper {
+    max-width: 70rem;
+    margin: 2rem auto;
+    
+    /* definição de padding lateral para quando largura menor do que 70rem */
+    padding: 0 1rem;
+    
+    display: grid;
+    /* tamanho de quadro inicial fixo com restante flexível */
+    grid-template-columns: 256px 1fr;
+    gap: 2rem;
+    /* mantém elementos alinhados ao top, do contrário força mesma altura */
+    align-items: flex-start; 
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%;
+    }
+    
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
