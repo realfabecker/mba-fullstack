@@ -1,0 +1,10 @@
+name: "next"
+
+services:
+  app:
+    image: node:18-bullseye    
+    working_dir: /app
+    volumes:
+      - .:/app
+    entrypoint: npm run dev
+    network_mode: host
