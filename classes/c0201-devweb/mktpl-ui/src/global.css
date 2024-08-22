@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: #FBF4F4;
+        
+        --gray-200: #949494;
+        --gray-300: #666666;
+        
+        --orange-base: #F24D0D;
+        --orange-shape: #F5EAEA;
+        --blue-light: #D7EFF9;
+    }
+}
+
+@layer base {
+    body {
+        @apply bg-background;
+    }
+}
