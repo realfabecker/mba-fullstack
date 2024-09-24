@@ -1,0 +1,45 @@
+{
+  "name": "gym-app",
+  "version": "1.0.0",
+  "description": "Gympass Style App",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run --dir src/use-cases",
+    "test:watch": "vitest run --dir src/use-cases",
+    "test:e2e": "vitest run --dir src/http",
+    "start:dev": "tsx watch src/server.ts",
+    "start": "node ./build/server.js",
+    "build": "tsup src --out-dir build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcryptjs": "2.4.6",
+    "@types/node": "22.5.5",
+    "@types/supertest": "6.0.2",
+    "@typescript-eslint/eslint-plugin": "7.15.0",
+    "@typescript-eslint/parser": "7.15.0",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-prettier": "5.1.3",
+    "globals": "15.9.0",
+    "prettier": "3.3.2",
+    "prisma": "5.19.1",
+    "supertest": "7.0.0",
+    "tsup": "8.2.4",
+    "tsx": "4.19.1"
+  },
+  "dependencies": {
+    "@fastify/jwt": "8.0.1",
+    "@hapi/boom": "10.0.1",
+    "@prisma/client": "5.19.1",
+    "bcryptjs": "2.4.3",
+    "dotenv": "16.4.5",
+    "fastify": "4.28.1",
+    "vite-tsconfig-paths": "5.0.1",
+    "vitest": "2.1.1",
+    "zod": "3.23.8"
+  }
+}
